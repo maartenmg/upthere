@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — Up There</title>
+<link rel="icon" href="../favicon.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <nav class="lang"><a href="../nl/privacy.html" hreflang="nl">Nederlands</a></nav>
+  <a class="brand" href="../">
+    <img class="mark-dark" src="../plane-mark.svg" alt="">
+    <img class="mark-light" src="../plane-mark-light.svg" alt="">
+    <div class="wordmark">Up <em>There</em></div>
+  </a>
+
+  <h1>Privacy policy</h1>
+  <p class="meta">Last updated: 24 November 2026</p>
+
+  <h2>In short</h2>
+  <p>Up There is an app for people who wait at home for someone who flies. For that we keep as little as we can: a random number for your phone, the names you type, the flights of the people you follow, and what we need to send you a notification.</p>
+  <ul>
+    <li>You make no account. No email address, no password, no phone number.</li>
+    <li>We do not track you. No ads, no analytics of what you do in the app, no sale of data.</li>
+    <li>The app never asks for your phone's location.</li>
+    <li>A calendar link is only ever stored encrypted.</li>
+    <li>One button erases everything: Settings › Erase my data.</li>
+  </ul>
+
+  <h2>Who is responsible</h2>
+  <p>Up There is an app by Permissio BV, the Netherlands. For any question about privacy: <a class="mono" href="mailto:upthereflighttracker@gmail.com">upthereflighttracker@gmail.com</a>.</p>
+
+  <h2>What we keep, and why</h2>
+  <p>This is stored on our server. All of it is needed to make the app work, and we use it for nothing else.</p>
+
+  <h3>Your phone</h3>
+  <ul>
+    <li>A random 128-bit number the app makes itself. It is the only "password" there is: whoever has the number is your phone. The app never shows it; it lives in your phone's keychain. It is how we know who may see what and who gets a notification.</li>
+    <li>Your first name, which you type yourself; if you leave it blank, your phone's model. So the person you follow sees who is watching.</li>
+    <li>Your language, your time zone and whether your phone shows a 12- or 24-hour clock. So a notification is in your language and your time, and does not arrive in the middle of your night.</li>
+    <li>When the app was last opened.</li>
+    <li>The push token Apple gives your phone and, if you use Live Activities, the tokens for those. Without them we cannot send a notification.</li>
+    <li>For each person you follow: whether notifications and the Live Activity are on.</li>
+  </ul>
+
+  <h3>The people you follow</h3>
+  <ul>
+    <li>Their name as you or they typed it, and their home airport. Where filled in, also how long the trip to the airport takes and how long they are there before departure and after landing.</li>
+    <li>Their flights: flight number, route, scheduled and actual times, gate and terminal, the aircraft, and the status our flight data source reports. This is the heart of the app.</li>
+    <li>From a calendar we keep only the flights and the periods someone is away from home. Other entries, such as leave, are read but not kept.</li>
+    <li>For every notification we decided on for a flight: its kind, the moment and the text. So you never get the same notification twice.</li>
+  </ul>
+
+  <h3>A calendar link (only if you add one)</h3>
+  <ul>
+    <li>Anyone with a calendar link can read someone's roster and so their whereabouts. That is why we only store it encrypted (AES-256-GCM). The key is not stored with the data but in the server's protected settings, and the link never goes back to a phone.</li>
+    <li>We fetch the calendar about every two hours. If you disconnect it, we erase the link; flights already there stay.</li>
+  </ul>
+
+  <h3>Codes to share</h3>
+  <ul>
+    <li>A six-character code, who it is for, which phone made it, when it expires and which phones used it. A code works for seven days. To stop guessing we count failed attempts per phone, for one hour.</li>
+  </ul>
+
+  <h3>Weather</h3>
+  <ul>
+    <li>For the place where someone is, we ask Apple Weather for the current weather. We keep the answer per airport, never longer than Apple allows. No history.</li>
+  </ul>
+
+  <h2>What we do not keep or do</h2>
+  <ul>
+    <li>No account, email address, phone number or contacts.</li>
+    <li>No location of your phone.</li>
+    <li>No analytics, no ads, no tracking and no third-party crash reporting. There is no advertising or analytics software in the app.</li>
+    <li>No advertising identifier. Your phone's number is used only inside Up There.</li>
+    <li>Text you paste to add a flight, such as a booking confirmation, is read on your phone and goes nowhere. Only the flight number and the day you pick go to the flight data source.</li>
+    <li>Your choice of light or dark and the widget's data stay on your phone.</li>
+  </ul>
+
+  <h2>Who gets what</h2>
+  <p>A few services help the app work. They get only what is listed here.</p>
+  <table>
+    <tr><th>Who</th><th>What for</th><th>What they get</th></tr>
+    <tr><td>Convex</td><td>Our server and database</td><td>Everything under "What we keep". They process it on our behalf.</td></tr>
+    <tr><td>Apple (APNs)</td><td>Delivering notifications and Live Activities</td><td>Your push token and the content of the notification: the person's name, the flight number, places and times.</td></tr>
+    <tr><td>Apple (WeatherKit)</td><td>Showing the weather</td><td>An airport's coordinates, rounded. Nothing about you.</td></tr>
+    <tr><td>The flight data source (FlightAware or AeroDataBox)</td><td>Looking up a flight's status</td><td>The flight number and the day, and sometimes the aircraft's registration. Nothing about who follows the flight.</td></tr>
+    <tr><td>The calendar's provider</td><td>Fetching the calendar</td><td>A plain request from our server to the address you gave.</td></tr>
+    <tr><td>Apple (App Store)</td><td>Buying Comfort</td><td>Apple handles the payment. We get no payment details, only whether Comfort is active.</td></tr>
+  </table>
+  <p>We give data to no one else, unless the law requires us to.</p>
+  <p>Our server is in the European Union (Ireland). Apple and the flight data sources are partly outside the EU. Data only goes there for the purpose above, under the EU-US Data Privacy Framework or the European Commission's standard contractual clauses.</p>
+
+  <h2>Legal basis</h2>
+  <p>We process this data because it is needed to provide the app you install and use yourself (performance of a contract), and to keep it secure (legitimate interest).</p>
+
+  <h2>People you follow</h2>
+  <p>You can follow someone who does not have the app, such as a partner or parent. We then keep their name, home airport and flights, because you enter them or connect their calendar. Only do so with their knowledge.</p>
+  <p>Someone followed through a code sees by name, in their own app, who is watching and can disconnect anyone. Followers do not see each other.</p>
+
+  <h2>How long</h2>
+  <ul>
+    <li>Codes work for seven days.</li>
+    <li>Weather: until the moment Apple specifies.</li>
+    <li>A notification waiting out your night: until morning, then sent or discarded.</li>
+    <li>Everything else is kept until you remove it, or until a person is removed by whoever added them.</li>
+  </ul>
+
+  <h2>How to get it removed</h2>
+  <p>In the app you can:</p>
+  <ul>
+    <li>remove a person you added yourself, with all flights and notifications;</li>
+    <li>disconnect a calendar: the link is erased;</li>
+    <li>stop following someone, or disconnect a follower;</li>
+    <li>turn notifications or the Live Activity off per person.</li>
+  </ul>
+  <p><strong>Everything at once: Settings › Erase my data.</strong> The app asks first and names who will disappear. Then, at once and for good: your phone with its name and tokens, all your connections, the codes you made, and every person only you look after, with all their flights. The app then starts over with a new number.</p>
+  <p>Deleting the app from your phone removes nothing from our server. iOS often keeps the number in the keychain, so a new install finds your connections again. To really start over, use the button first.</p>
+
+  <h2>Your rights</h2>
+  <p>Under the GDPR you can ask us for access to, correction, erasure, restriction and portability of your data, and you can object. Email us for that. Since we do not know you by name or email address, we will ask you for things only you can know, such as the names in your app and the flights you follow. Erasing can always be done directly in the app. You can file a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens).</p>
+
+  <h2>Security</h2>
+  <ul>
+    <li>All connections to our server and to the services above are encrypted.</li>
+    <li>Calendar links are stored encrypted; the keys are not in the app.</li>
+    <li>Your phone's number lives in the keychain and is never shown.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Up There is not made for children and does not ask for age.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, we update this page and the date at the top.</p>
+
+  <h2>Contact</h2>
+  <p><a class="mono" href="mailto:upthereflighttracker@gmail.com">upthereflighttracker@gmail.com</a></p>
+
+  <footer><a href="support.html">Help and contact</a> · <a href="../">Up There</a></footer>
+</main>
+</body>
+</html>

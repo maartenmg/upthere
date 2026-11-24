@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="-100 -56 200 100">
+<!-- The plane from the app icon, on its own: the small mark above the wordmark (3 Nov 2026). -->
+<g transform="translate(0 0) rotate(-20)">
+<path d="M96 0 C96 -8 86 -11 72 -11 L-54 -11 C-72 -11 -84 -5 -98 4 L-98 7 L-54 11 L72 11 C86 11 96 8 96 0 Z" fill="#F0F4F8"/>
+<path d="M-50 -11 C-60 -24 -70 -38 -76 -50 L-60 -50 C-52 -38 -44 -24 -34 -11 Z" fill="#F0F4F8"/>
+<path d="M-58 -2 L-100 -16 L-94 -19 L-52 -8 Z" fill="#F0F4F8"/>
+<path d="M26 9 L-22 34 L-40 34 L-2 9 Z" fill="#F0F4F8"/>
+<rect x="-10" y="19" width="30" height="13" rx="6.5" fill="#F0F4F8"/>
+<path d="M78 -7 L88 -7 C90 -5 90 -3 89 -2 L76 -2 Z" fill="#0B1120" opacity=".9"/>
+</g>
+</svg>

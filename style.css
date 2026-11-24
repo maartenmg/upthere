@@ -1,0 +1,65 @@
+/* Up There — support and privacy pages. Palette and type from CLAUDE.md, "Design system". */
+@font-face { font-family: 'Lora'; src: url('fonts/Lora-Variable.ttf') format('truetype'); font-weight: 400 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Lora'; src: url('fonts/Lora-Italic-Variable.ttf') format('truetype'); font-weight: 400 700; font-style: italic; font-display: swap; }
+@font-face { font-family: 'DM Mono'; src: url('fonts/DMMono-Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; }
+
+:root {
+  --bg: #0B1120; --card: #111827; --border: #1E3A5F; --dusk: #2D5F8A;
+  --accent: #FF8F3F; --text: #F0F4F8; --muted: #7B828E; --sky-top: #0F1E35;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #F7F3EC; --card: #FFFDF9; --border: #E4DACB; --dusk: #2D5F8A;
+    --accent: #B34D10; --text: #1C1917; --muted: #6B6660; --sky-top: #FFFFFF;
+    color-scheme: light;
+  }
+  .brand img.mark-dark { display: none; }
+}
+@media (prefers-color-scheme: dark) { .brand img.mark-light { display: none; } }
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; min-height: 100vh;
+  background: linear-gradient(to bottom, var(--sky-top), var(--bg) 320px) var(--bg);
+  color: var(--text);
+  font: 400 1.0625rem/1.65 'Lora', Georgia, serif;
+}
+main { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+
+.brand { display: block; text-align: center; text-decoration: none; color: inherit; margin-bottom: 2.5rem; }
+.brand img { width: 64px; height: 32px; display: block; margin: 0 auto 0.5rem; }
+.wordmark { font-size: 1.75rem; font-weight: 500; letter-spacing: 0.01em; }
+.wordmark em { color: var(--accent); }
+.tagline { font-style: italic; color: var(--muted); margin: 0.25rem 0 0; }
+
+nav.lang { font: 0.8125rem 'DM Mono', ui-monospace, monospace; text-align: right; margin-bottom: 1rem; color: var(--muted); }
+nav.lang a { color: var(--muted); }
+
+h1 { font-size: 2rem; font-weight: 500; line-height: 1.2; margin: 0 0 0.5rem; }
+h2 { font-size: 1.3rem; font-weight: 600; margin: 2.25rem 0 0.5rem; }
+h3 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.25rem; }
+p, ul { margin: 0 0 1rem; }
+ul { padding-left: 1.25rem; }
+li { margin-bottom: 0.35rem; }
+a { color: var(--accent); text-underline-offset: 2px; }
+.mono, code { font-family: 'DM Mono', ui-monospace, monospace; font-size: 0.92em; }
+.meta { font: 0.8125rem 'DM Mono', ui-monospace, monospace; color: var(--muted); margin-bottom: 2rem; }
+
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 1.25rem 1.25rem 0.5rem; margin: 1.5rem 0; }
+.links { list-style: none; padding: 0; }
+.links li { margin: 0; border-top: 1px solid var(--border); }
+.links li:first-child { border-top: 0; }
+.links a { display: block; padding: 0.9rem 0; text-decoration: none; color: var(--text); }
+.links a span { color: var(--muted); font-style: italic; display: block; font-size: 0.95rem; }
+
+table { width: 100%; border-collapse: collapse; margin: 0 0 1rem; font-size: 0.95rem; }
+th, td { text-align: left; vertical-align: top; padding: 0.55rem 0.5rem 0.55rem 0; border-top: 1px solid var(--border); }
+th { font-weight: 600; }
+
+/* Anything that must be filled in before publishing. scripts/check-site.sh refuses while one is left. */
+mark.todo { background: #FCD34D; color: #1C1917; padding: 0 0.2em; border-radius: 3px; }
+
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font: 0.8125rem 'DM Mono', ui-monospace, monospace; color: var(--muted); }
+footer a { color: var(--muted); }
